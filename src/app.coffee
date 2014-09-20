@@ -11,6 +11,7 @@ sendResponse = helpers.sendResponse
 getBodyFrom  = helpers.getBodyFrom
 parseBody    = helpers.parseBody
 serve        = helpers.serve
+notFound     = helpers.notFound
 
 findMatchesIn = core.findMatchesIn
 
@@ -43,7 +44,12 @@ app = http.createServer((request, response) ->
     if urlPath is '/favicon.ico'
       sendResponse 203, 'text/plain', 0, null, response
     else
-      {filePath, mimeType} = routes[urlPath]
+      route = routes[urlPath]
+
+      # If route is not on route map, then return 404.
+      return notFound response if not route
+
+      {filePath, mimeType} = route
 
       serve filePath, mimeType, response
   else if request.method is 'POST'

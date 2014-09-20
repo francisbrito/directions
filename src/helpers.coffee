@@ -67,7 +67,13 @@ serve = (filePath, mimeType, response) ->
     else
       sendResponse 200, mimeType, content.length, content, response
 
+# Servers a not found request.
+notFound = (response) ->
+  msg = 'Not found. :('
+  sendResponse 404, 'text/plain', msg.length, msg, response
+
 exports.sendResponse = sendResponse
 exports.getBodyFrom  = getBodyFrom
 exports.parseBody    = parseBody
-exports.serve         = serve
+exports.serve        = serve
+exports.notFound     = notFound
