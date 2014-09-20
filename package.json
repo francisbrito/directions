@@ -2,7 +2,7 @@
   "name": "directions",
   "version": "0.0.1",
   "description": "High-lights cardinal directions (north, east, south, west) and distances (feet, miles, meters kilometers) from a text body.",
-  "main": "./lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./bin/www"
