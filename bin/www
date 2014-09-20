@@ -1,0 +1,7 @@
+#!/usr/bin/env coffee
+
+{app, port} = require '../src/app.coffee'
+
+app.listen(port, () ->
+  console.log "Listenting at http://localhost:#{port}"
+)

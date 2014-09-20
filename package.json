@@ -1,0 +1,26 @@
+{
+  "name": "directions",
+  "version": "0.0.1",
+  "description": "High-lights cardinal directions (north, east, south, west) and distances (feet, miles, meters kilometers) from a text body.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./bin/www"
+  },
+  "keywords": [
+    "distance",
+    "direction",
+    "cardinal",
+    "text",
+    "fun"
+  ],
+  "author": "Francis Brito <fr.br94@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-util": "^3.0.1"
+  }
+}
