@@ -4,41 +4,35 @@
 
 From [Tim Caswell's Play by Play session][pbp].
 
-## Getting started
-
-In order to get hacking into `Directions` you'll need:
-
-- [Node.js][node]
-- [CoffeeScript][coffee]
-- A descent browser.
-
-### Setting things up
-
-Once you have Node.js installed and NPM (which is when you install Node) then run:
+## Install
 
 ```bash
-npm install -g coffee-script
+$ npm install https://github.com/francisbrito/directions
 ```
 
-And you're done. :)
+## Usage
 
-### Running the application
+```javascript
+var directions = require('directions');
 
-As simple as running `coffee app.coffee`.
+var matches = directions.findMatchesIn('Head 5 meters north, then 10 meters east.');
+```
 
-You can run the application on a different port by running `PORT=8000 coffee app.coffee`.
+## API
 
-**Pro-Tip**: 
-Want to restart your server each time code changes? Use `nodemon`! 
-Install it with `npm install -g nodemon`, then do `nodemon app.coffee`.
+### directions.findMatchesIn(text)
 
-## Lessons learned
+Finds strings matching cardinal directions (north, west, east, south) and distances in `text`.
 
-Here are some take-aways from my experience building this little side-project.
+#### text
+**Required**
 
-- Vanilla Node.js is both daunting and **exciting**.
-- Always keep JavaScript docs at hand.
+Type: `string`
+
+An arbitrary string.
+
+#### returns
+
+An array containing all matches.
 
 [pbp]: http://beta.pluralsight.com/courses/play-by-play-tim-caswell
-[node]: http://nodejs.org/download/
-[coffee]: http://coffeescript.org/
