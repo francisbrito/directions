@@ -22,5 +22,20 @@
     "gulp-coffee": "^2.2.0",
     "gulp-rename": "^1.2.0",
     "gulp-util": "^3.0.1"
-  }
+  },
+  "dependencies": {
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-util": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francisbrito/directions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francisbrito/directions/issues"
+  },
+  "homepage": "https://github.com/francisbrito/directions"
 }
