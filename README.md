@@ -7,7 +7,7 @@ From [Tim Caswell's Play by Play session][pbp].
 ## Install
 
 ```bash
-$ npm install https://github.com/francisbrito/directions
+$ npm install git+https://github.com/francisbrito/directions
 ```
 
 ## Usage
